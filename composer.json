@@ -11,9 +11,7 @@
             "name": "Tadas Paplauskas"
         }
     ],
-    "require": {
-        "elasticsearch/elasticsearch": "dev-master"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
             "Codeception\\Module\\": "src"
