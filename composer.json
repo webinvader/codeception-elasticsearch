@@ -1,14 +1,14 @@
 {
-    "name": "tadaspaplauskas/codeception-elasticsearch",
+    "name": "webinvader/codeception-elasticsearch",
     "description": "Elastic Search Module for Codeception",
     "license": "MIT",
     "authors": [
         {
-            "name": "Jan Wyszynski",
-            "email": "jan.wyszynki@gmail.com"
+            "name": "webinvader",
+            "email": "webinvador@gmail.com"
         },
         {
-            "name": "Tadas Paplauskas"
+            "name": "webinvader"
         }
     ],
     "require": {},
