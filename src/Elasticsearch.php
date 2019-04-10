@@ -40,13 +40,13 @@ class Elasticsearch extends Module
 
     public function seeInElasticsearch($index, $type, $fieldsOrValue)
     {
-        return $this->assertTrue($this->count($index, $type, $fieldsOrValue) > 0, 'item exists');
+        return $this->assertTrue($this->count($index, $type, $fieldsOrValue) > 0, "Couldn\'t find $index with". json_encode($fieldsOrValue));
     }
 
     public function dontSeeInElasticsearch($index, $type, $fieldsOrValue)
     {
         return $this->assertTrue($this->count($index, $type, $fieldsOrValue) === 0,
-            'item does not exist');
+            "Unexpectedly managed to find $index with".json_encode($fieldsOrValue)));
     }
 
     protected function count($index, $type, $fieldsOrValue)
